@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrolladores Indie Famosos | IndieLab</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="desarrolladores.css"> 
+</head>
+<body>
+ <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid py-2" style="border-bottom: 3px solid #007bff;">
+            <a class="navbar-brand ms-4" href="#" style="font-weight: bold;">IndieLab</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end me-4" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item me-3">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item me-3 dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Reseñas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../resenas-indielab.html">Reseñas de IndieLab</a></li>
+                            <li><a class="dropdown-item" href="../resenas-comunidad.html">Reseñas de la Comunidad</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-3 dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Juegos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../juegosnuevos.html">Nuevos</a></li>
+                            <li><a class="dropdown-item" href="../Proximamente/proximamente.html">Proximamente</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item me-3">
+                    <a class="nav-link active" aria-current="page" href="desarrolladores.html">Desarrolladores</a>
+                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="https://via.placeholder.com/30" alt="Profile" class="rounded">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <header class="container mt-5 mb-5">
+        <h1 class="display-4 fw-bold">Grandes Creadores del Mundo Indie</h1>
+        <p class="lead">Conoce las mentes maestras detrás de los juegos más influyentes y queridos de la escena independiente.</p>
+    </header>
+
+    <section class="container mt-5 mb-5">
+        
+        <div id="desarrolladores-container" class="row row-cols-1 row-cols-md-2 g-5">
+            </div>
+
+        <div class="text-center mt-5 mb-5">
+            <button id="btn-ver-mas-devs" class="btn btn-dark rounded-0 px-5 py-2" style="display: none;">
+                Ver más desarrolladores
+            </button>
+        </div>
+    </section>
+       <footer class="bg-light pt-4 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <h5 class="fw-bold">IndieLab</h5>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="text-dark me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-dark me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-dark me-3"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <p class="mt-3">&copy;2025 IndieLab. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h5 class="fw-bold">Juegos/Proyectos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-dark">Juegos nuevos</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Tendencias</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Proyectos nuevos</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h5 class="fw-bold">Desarrolladores</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-dark">Más conocidos</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Historías</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Enviar informacion</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h5 class="fw-bold">Política de privacidad/donaciones</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-dark">Donaciones</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Políticas de privacidad</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Reglas de la comunidad</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="desarrolladores.js"></script>
+</body>
+</html>

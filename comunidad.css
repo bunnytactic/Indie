@@ -1,0 +1,91 @@
+/* comunidad.css - Estilos específicos para la tarjeta de reseña */
+
+/* Contenedor principal de la tarjeta de reseña */
+.reseña-card {
+    border-radius: 12px;
+    overflow: hidden; /* Asegura que todo el contenido se quede dentro del borde */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease; /* Transición para el efecto lift (si se quiere agregar aquí también) */
+}
+
+/* Imagen de fondo del juego dentro de la tarjeta */
+.reseña-card-img {
+    height: 300px; /* Altura fija para las imágenes superiores */
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Área de contenido inferior con el degradado de color (Basado en las imágenes) */
+.reseña-card-body {
+    padding: 20px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.7) 0%, #d8e5ff 100%); /* Fondo degradado sutil (ejemplo) */
+    position: relative;
+    z-index: 10; 
+}
+
+/* Fila de metadatos de usuario (Avatar, nombre, íconos) */
+.reseña-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.reseña-meta-usuario {
+    display: flex;
+    align-items: center;
+}
+
+.reseña-meta img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.reseña-meta span {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #343a40;
+}
+
+/* Estrellas de puntuación */
+.reseña-estrellas {
+    color: gold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Íconos de redes sociales (Discord, Instagram) */
+.reseña-social a {
+    color: #495057;
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+/* Contenido de la reseña (el texto) */
+.reseña-texto {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #495057;
+}
+
+/* Fondo degradado específico para simular el look de la imagen */
+/* Puedes crear una clase diferente para cada juego si quieres colores únicos */
+.reseña-celeste {
+    background: linear-gradient(180deg, #b88ce8 0%, #68b9f0 100%); /* Morado a Azul */
+}
+
+.reseña-blasphemous {
+     background: linear-gradient(180deg, #d49a00 0%, #ffc107 100%); /* Tonos dorados */
+}
+
+.reseña-hollow-knight {
+    background: linear-gradient(180deg, #007bff 0%, #a0c4ff 100%); /* Tonos azules claros */
+}
+
+.reseña-otra {
+    background: linear-gradient(180deg, #ff9a85 0%, #ffc06f 100%); /* Tonos cálidos */
+}

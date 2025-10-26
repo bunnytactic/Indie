@@ -1,0 +1,56 @@
+.juegos-nuevos-hero {
+    /* Fondo azul oscuro con los elementos visuales de la imagen e85739.png */
+    background: linear-gradient(180deg, #182335 0%, #1e4d77 100%);
+    position: relative;
+    overflow: hidden;
+    padding-top: 100px; 
+}
+
+/* Simulación del fondo */
+.juegos-nuevos-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('jn/Fondo.png') no-repeat center bottom; 
+    background-size: cover;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.juegos-nuevos-hero > .container {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Estilo para la imagen del listado */
+.juego-imagen-destacada {
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-transparent {
+    /* 1. Hace el fondo de la barra de navegación transparente */
+    background-color: transparent !important;
+}
+
+.navbar-transparent .navbar-brand,
+.navbar-transparent .nav-link,
+.navbar-transparent .navbar-toggler-icon {
+    /* 2. Cambia el color del texto de la marca y los enlaces a blanco */
+    color: white !important;
+}
+
+/* Opcional: Para asegurar que el icono del toggler (hamburguesa) se vea bien */
+.navbar-transparent .navbar-toggler-icon {
+    /* Aplica un filtro para que el ícono (generalmente SVG) sea blanco */
+    filter: invert(1);
+}
+
+/* Opcional: Para cambiar el color al pasar el mouse (hover) */
+.navbar-transparent .nav-link:hover {
+    color: #cccccc !important; /* Gris claro para el efecto hover */
+}

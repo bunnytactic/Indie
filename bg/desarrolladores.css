@@ -1,0 +1,45 @@
+/* desarrolladores-assets/desarrolladores.css */
+
+.dev-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    transition: box-shadow 0.3s ease;
+    height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
+}
+
+.dev-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dev-image {
+    width: 100%;
+    height: 300px; /* Altura fija para la imagen del desarrollador */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.dev-card-body {
+    padding: 20px;
+}
+
+.dev-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.dev-game {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.dev-bio {
+    color: #666;
+    line-height: 1.6;
+    /* Estilo para manejar el truncado de la biografía si es necesario */
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Muestra solo 4 líneas */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
